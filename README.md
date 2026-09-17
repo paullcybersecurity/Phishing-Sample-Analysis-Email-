@@ -93,7 +93,9 @@ Recommended Action:
 
 This real-world sample surfaces a more advanced and more realistic set of techniques: header impersonation of a government domain, disposable free-registrar infrastructure, spam-filter-evading hidden content, and — most significantly — phishing content deliberately hosted on trusted cloud storage specifically to defeat automated reputation checks. The fact that both VirusTotal and urlscan.io returned clean/no-data results is not a limitation of this analysis; it is itself the finding for me. It demonstrates precisely why SOC triage cannot rely on automated tooling alone: a verdict of "phishing, confirmed" here rests entirely on manual header inspection (the spoofed `.gov` hostname, the To-header mismatch) and content analysis (the hidden spam-filter-evasion text, the urgency language), not on any single automated tool flagging it as malicious. 
 
-![urlscan output, virustotal output, hybridanalysis output](malwarescan1.png,malwarescan2.png,hybridanalysis.png)
+![urlscan output, virustotal output, hybridanalysis output](malwarescan1.png)
+![](malwarescan2.png) 
+![](hybridanalysis.png)
 ## Tools Used
 - Gmail ("Show original" header viewer)
 - VirusTotal (URL reputation check — inconclusive)
